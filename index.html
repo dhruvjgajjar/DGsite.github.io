@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DGSite</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Overview</h2>
+                <h3>Front-end Developer</h3>
+                <p><small>Good knowledge in web, graphic, UI/UX etc designing.</small></p>
+            </div>
+            <div class="col-2">
+                <img src="web.jpg" class="web">
+                <div class="color-box2"></div>
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="color-box3">
+                <a href="https://www.instagram.com/dgishere/">
+                    <img src="ig.png" class="ig">
+                </a>
+                <a href="">
+                    <img src="gmail.png" class="gmail">
+                </a>
+                <a href="https://www.linkedin.com/in/dhruv-gajjar-bbaa931b9/">
+                    <img src="link.png" class="link">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "70px";
+            }else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+        alert("This Site is in under development\nThank you for visiting!")
+    </script>
+</body>
+</html>
